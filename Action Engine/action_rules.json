@@ -1,0 +1,68 @@
+{
+  "schema_version": "action_rules.v2",
+  "note": "Konfigurasi deterministik untuk Action Engine LiveCoach AI. Diedit oleh M3/SCR-3. [v2] Ditulis ulang supaya audience_state, selected_action, dan required_fact_types PERSIS memakai enum resmi di dokumen spesifikasi Section 4.2 dan 11 (sebelumnya v1 memakai taxonomy custom sendiri -- lihat DECISIONS_LOG.md di root folder Lomba untuk detail perubahan dan alasannya). source_intents sekarang memakai Intent enum resmi Section 4.1 (PRICE_PROMO, SIZE_VARIANT, STOCK_AVAILABILITY, PRODUCT_DETAIL, SHIPPING, PURCHASE_INTENT, OBJECTION_COMPLAINT, IRRELEVANT_SPAM) -- TETAP perlu dikonfirmasi ke M2/SCR-2 karena itu output asli model IndoBERTweet milik mereka, bukan diverifikasi langsung ke kode M2.",
+
+  "threshold_policy": {
+    "description": "Sinyal minimal sebelum Action Engine berani memilih action selain NO_ACTION.",
+    "min_supporting_comments_60s": 2,
+    "min_state_confidence": 0.7,
+    "mode": "AND"
+  },
+
+  "tie_break_policy": {
+    "description": "Kalau lebih dari satu audience_state melewati threshold di window yang sama, urutkan berdasarkan priority_rank (angka kecil = didahulukan). Kalau priority_rank sama, menang yang state_confidence lebih tinggi.",
+    "primary": "priority_rank_asc",
+    "secondary": "state_confidence_desc"
+  },
+
+  "audience_states": [
+    {
+      "state": "SIZE_FRICTION",
+      "priority_rank": 1,
+      "source_intents": ["SIZE_VARIANT"],
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "required_fact_types": ["SIZE_GUIDE"],
+      "reason_template": "{support_count} pertanyaan ukuran muncul dalam 60 detik terakhir."
+    },
+    {
+      "state": "STOCK_FRICTION",
+      "priority_rank": 2,
+      "source_intents": ["STOCK_AVAILABILITY"],
+      "selected_action": "CONFIRM_STOCK",
+      "required_fact_types": ["STOCK"],
+      "reason_template": "{support_count} pertanyaan stok/warna muncul dalam 60 detik terakhir."
+    },
+    {
+      "state": "PRODUCT_INFO_GAP",
+      "priority_rank": 3,
+      "source_intents": ["PRODUCT_DETAIL"],
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "required_fact_types": ["PRODUCT_DETAIL"],
+      "reason_template": "{support_count} pertanyaan detail produk (bahan/deskripsi/perawatan) muncul dalam 60 detik terakhir."
+    },
+    {
+      "state": "PRICE_FRICTION",
+      "priority_rank": 4,
+      "source_intents": ["PRICE_PROMO"],
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "required_fact_types": ["PRICE_PROMO"],
+      "reason_template": "{support_count} pertanyaan harga/promo muncul dalam 60 detik terakhir."
+    }
+  ],
+
+  "not_yet_implemented": {
+    "note": "3 audience_state resmi berikut SENGAJA belum diaktifkan (bukan lupa) -- ditunda sesuai keputusan tim tanggal 19 Agustus 2026, diaktifkan menyusul setelah action di atas stabil. Knowledge Base SUDAH ditag siap pakai untuk SHIPPING_FRICTION (fact_type SHIPPING, 2 fact) dan OBJECTION_SPIKE (fact_type FAQ_PLAYBOOK, 3 fact dari kategori RETURN_POLICY/WARRANTY) -- tinggal ditambah rule di bawah + dataset training. PURCHASE_MOMENT (fact_type CHECKOUT_GUIDE) belum ada fact SAMA SEKALI di Knowledge Base, perlu dibuat dari nol dulu. Lihat DECISIONS_LOG.md di root untuk detail.",
+    "pending_states": [
+      {"state": "SHIPPING_FRICTION", "selected_action": "EXPLAIN_SHIPPING", "required_fact_types": ["SHIPPING"], "source_intents": ["SHIPPING"], "kb_ready": true},
+      {"state": "OBJECTION_SPIKE", "selected_action": "HANDLE_OBJECTION", "required_fact_types": ["FAQ_PLAYBOOK"], "source_intents": ["OBJECTION_COMPLAINT"], "kb_ready": true},
+      {"state": "PURCHASE_MOMENT", "selected_action": "GUIDE_CHECKOUT", "required_fact_types": ["CHECKOUT_GUIDE"], "source_intents": ["PURCHASE_INTENT"], "kb_ready": false}
+    ]
+  },
+
+  "fallback_state": {
+    "state": "NO_CLEAR_SIGNAL",
+    "selected_action": "NO_ACTION",
+    "required_fact_types": [],
+    "ui_label": "Belum ada pola kuat"
+  }
+}

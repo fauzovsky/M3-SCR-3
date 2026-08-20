@@ -1,0 +1,618 @@
+{
+  "schema_version": "product_facts.v3",
+  "product_id": "TSHIRT-01",
+  "display_name": "Essential Cotton T-Shirt (Anak - Remaja - Dewasa)",
+  "generated_note": "Static knowledge base, bukan vector database. Size guide anak mengikuti pendekatan tinggi-badan EN 13402 / ISO 8559-1:2020 (standar Eropa/internasional yang jadi de-facto standar pakaian anak). Size guide dewasa memakai letter-size internasional (S-XXXL) yang lazim dipakai brand global, dengan catatan konversi ke kebiasaan ukuran lokal Indonesia (acuan konsep SNI 2161:2010 - Ukuran Pakaian Kaos Pria Dewasa). Angka cm pada size guide dewasa adalah nilai kerja tim untuk demo dan BELUM diverifikasi satu-per-satu terhadap tabel resmi SNI 2161:2010 -- jika dibutuhkan untuk kepatuhan produksi nyata, cek dokumen SNI aslinya di BSN. [v3] Ditambahkan field 'fact_type' per fact, memakai nilai resmi dari kontrak dokumen Section 4.2/10.4 (PRICE_PROMO, SIZE_GUIDE, STOCK, PRODUCT_DETAIL, SHIPPING, FAQ_PLAYBOOK, CHECKOUT_GUIDE). Field 'category' lama TETAP dipertahankan sebagai sub-tag internal yang lebih granular (mis. SIZE_GUIDE_ANAK) untuk kebutuhan organisasi/QA tim; yang dipakai untuk mencocokkan required_fact_types dari Action Engine adalah 'fact_type', BUKAN 'category'. Fact dengan category=STANDARD_REFERENCE ditandai internal_only=true dan tidak dikeluarkan fact_type publik karena isinya catatan referensi teknis internal, bukan untuk dikutip langsung ke penonton.",
+  "facts": [
+    {
+      "fact_id": "FACT-TS01-DESC-001",
+      "category": "PRODUCT_DESCRIPTION",
+      "question_trigger": [
+        "ini kaos apa",
+        "produk ini apa",
+        "buat siapa aja ini"
+      ],
+      "value": "Kaos lengan pendek unisex, tersedia dari ukuran anak sampai dewasa (rentang tinggi badan 86 cm sampai 180+ cm), potongan regular fit, bahan 100% cotton combed.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZESTD-NOTE",
+      "category": "SIZE_GUIDE",
+      "question_trigger": [
+        "ini ukuran internasional atau lokal",
+        "beda gak sama ukuran biasa"
+      ],
+      "value": "Size chart anak berbasis tinggi badan (standar EN 13402 / ISO 8559-1, dipakai luas di Eropa untuk pakaian anak). Size chart dewasa berbasis letter S-XXXL ala internasional; ukuran lokal Indonesia pada umumnya sekitar 3-5 cm lebih kecil dari ukuran internasional pada label yang sama, jadi pembeli yang biasa pakai ukuran lokal disarankan naik satu tingkat.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-92",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 2 tahun size berapa",
+        "TB 90 cm cocok size apa"
+      ],
+      "value": "Size 92 (anak): tinggi badan 86-92 cm, usia acuan sekitar 2 tahun, lingkar dada sekitar 52 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-98",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 3 tahun size berapa",
+        "TB 96 cocok size apa"
+      ],
+      "value": "Size 98 (anak): tinggi badan 93-98 cm, usia acuan sekitar 3 tahun, lingkar dada sekitar 54 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-104",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 4 tahun size berapa",
+        "TB 100 cocok size apa"
+      ],
+      "value": "Size 104 (anak): tinggi badan 99-104 cm, usia acuan sekitar 4 tahun, lingkar dada sekitar 56 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-110",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 5 tahun size berapa",
+        "TB 108 cocok size apa"
+      ],
+      "value": "Size 110 (anak): tinggi badan 105-110 cm, usia acuan sekitar 5 tahun, lingkar dada sekitar 58 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-116",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 6 tahun size berapa",
+        "TB 114 cocok size apa"
+      ],
+      "value": "Size 116 (anak): tinggi badan 111-116 cm, usia acuan sekitar 6 tahun, lingkar dada sekitar 60 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-122",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 7 tahun size berapa",
+        "TB 120 cocok size apa"
+      ],
+      "value": "Size 122 (anak): tinggi badan 117-122 cm, usia acuan sekitar 7 tahun, lingkar dada sekitar 62 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-KIDS-128",
+      "category": "SIZE_GUIDE_ANAK",
+      "question_trigger": [
+        "anak umur 8 tahun size berapa",
+        "TB 126 cocok size apa"
+      ],
+      "value": "Size 128 (anak): tinggi badan 123-128 cm, usia acuan sekitar 8 tahun, lingkar dada sekitar 64 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-TEEN-134",
+      "category": "SIZE_GUIDE_REMAJA",
+      "question_trigger": [
+        "anak umur 9 tahun size berapa",
+        "remaja awal size berapa"
+      ],
+      "value": "Size 134 (remaja awal, setara Remaja XS): tinggi badan 129-134 cm, usia acuan 9-10 tahun, lingkar dada sekitar 66 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-TEEN-140",
+      "category": "SIZE_GUIDE_REMAJA",
+      "question_trigger": [
+        "remaja size S berapa cm",
+        "umur 10-11 tahun size apa"
+      ],
+      "value": "Size 140 (Remaja S): tinggi badan 135-140 cm, usia acuan 10-11 tahun, lingkar dada sekitar 68 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-TEEN-146",
+      "category": "SIZE_GUIDE_REMAJA",
+      "question_trigger": [
+        "umur 11-12 tahun size apa"
+      ],
+      "value": "Size 146 (Remaja S/M): tinggi badan 141-146 cm, usia acuan 11-12 tahun, lingkar dada sekitar 70 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-TEEN-152",
+      "category": "SIZE_GUIDE_REMAJA",
+      "question_trigger": [
+        "remaja size M berapa cm",
+        "umur 12-13 tahun size apa"
+      ],
+      "value": "Size 152 (Remaja M): tinggi badan 147-152 cm, usia acuan 12-13 tahun, lingkar dada sekitar 76 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-TEEN-158",
+      "category": "SIZE_GUIDE_REMAJA",
+      "question_trigger": [
+        "remaja size L berapa cm",
+        "umur 13-14 tahun size apa"
+      ],
+      "value": "Size 158 (Remaja L): tinggi badan 153-158 cm, usia acuan 13-14 tahun, lingkar dada sekitar 80 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-TEEN-164",
+      "category": "SIZE_GUIDE_REMAJA",
+      "question_trigger": [
+        "remaja mepet dewasa size apa",
+        "umur 14-15 tahun size apa"
+      ],
+      "value": "Size 164 (Remaja XL, mendekati dewasa XS): tinggi badan 159-164 cm, usia acuan 14-15 tahun, lingkar dada sekitar 84 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-XS",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "dewasa badan kecil size apa",
+        "size XS buat siapa"
+      ],
+      "value": "Size XS (dewasa): lingkar dada 84-88 cm, panjang baju 60 cm, cocok untuk BB 38-45 kg, TB 148-158 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-S",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "ukuran S",
+        "size S buat siapa"
+      ],
+      "value": "Size S (dewasa): lingkar dada 88-92 cm, panjang baju 63 cm, cocok untuk BB 40-50 kg, TB 150-160 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-M",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "ukuran M",
+        "bb 55 ukuran apa",
+        "size M buat siapa"
+      ],
+      "value": "Size M (dewasa): lingkar dada 96-100 cm, panjang baju 67 cm, cocok untuk BB 50-60 kg, TB 158-168 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-L",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "ukuran L",
+        "bb 65 ukuran apa",
+        "size L buat siapa"
+      ],
+      "value": "Size L (dewasa): lingkar dada 104-108 cm, panjang baju 71 cm, cocok untuk BB 60-72 kg, TB 165-175 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-XL",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "ukuran XL",
+        "bb 80 ukuran apa"
+      ],
+      "value": "Size XL (dewasa): lingkar dada 112-116 cm, panjang baju 75 cm, cocok untuk BB 72-85 kg, TB 168-178 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-XXL",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "ukuran XXL",
+        "size paling besar ada gak"
+      ],
+      "value": "Size XXL (dewasa): lingkar dada 120-124 cm, panjang baju 79 cm, cocok untuk BB 85-95 kg, TB 170-180 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-XXXL",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "ada size di atas XXL",
+        "badan besar banget size apa"
+      ],
+      "value": "Size XXXL (dewasa): lingkar dada 128-132 cm, panjang baju 82 cm, cocok untuk BB 95-108 kg, TB 172-182 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-NOTE",
+      "category": "SIZE_GUIDE_DEWASA",
+      "question_trigger": [
+        "antara dua ukuran pilih mana",
+        "ragu ukuran"
+      ],
+      "value": "Jika berat badan berada di antara dua rentang ukuran, disarankan pilih ukuran yang lebih besar untuk fit yang lebih nyaman (regular fit, bukan slim fit).",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-METHOD-NOTE",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran S disini sama gak sama yang di toko lain",
+        "ini ukuran lokal apa internasional"
+      ],
+      "value": "Tabel di bawah ini pakai konvensi ukur ala pasar lokal Indonesia: Panjang (P) diukur dari bahu ke bawah, Lebar (L) diukur rata dari ketiak ke ketiak (bukan lingkar dada penuh). Ini beda metode dengan tabel SIZE_GUIDE_DEWASA di atas yang pakai lingkar dada penuh (circumference). Perkiraan konversi kasar: lingkar dada penuh sekitar 2x Lebar.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-PRIA-S",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal S cowok berapa",
+        "size S versi indo berapa cm"
+      ],
+      "value": "Ukuran lokal Pria S: Panjang 63 cm, Lebar (ketiak-ke-ketiak) 43 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-PRIA-M",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal M cowok berapa",
+        "size M versi indo berapa cm"
+      ],
+      "value": "Ukuran lokal Pria M: Panjang 70 cm, Lebar (ketiak-ke-ketiak) 52 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-PRIA-L",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal L cowok berapa",
+        "size L versi indo berapa cm"
+      ],
+      "value": "Ukuran lokal Pria L: Panjang 73 cm, Lebar (ketiak-ke-ketiak) 55 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-PRIA-XL",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal XL cowok berapa",
+        "size XL versi indo berapa cm"
+      ],
+      "value": "Ukuran lokal Pria XL: Panjang 75 cm, Lebar (ketiak-ke-ketiak) 57 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-PRIA-XXL",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal XXL cowok berapa",
+        "size XXL versi indo berapa cm"
+      ],
+      "value": "Ukuran lokal Pria XXL: Panjang 79 cm, Lebar (ketiak-ke-ketiak) 60 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-PRIA-XXXL",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal XXXL cowok berapa",
+        "size paling besar versi indo"
+      ],
+      "value": "Ukuran lokal Pria XXXL: Panjang 82 cm, Lebar (ketiak-ke-ketiak) 63 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-WANITA-S",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal S cewek berapa",
+        "size S wanita versi indo"
+      ],
+      "value": "Ukuran lokal Wanita S: Panjang 55 cm, Lebar (ketiak-ke-ketiak) 39 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-WANITA-M",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal M cewek berapa",
+        "size M wanita versi indo"
+      ],
+      "value": "Ukuran lokal Wanita M: Panjang 58 cm, Lebar (ketiak-ke-ketiak) 42 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-WANITA-L",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal L cewek berapa",
+        "size L wanita versi indo"
+      ],
+      "value": "Ukuran lokal Wanita L: Panjang 61 cm, Lebar (ketiak-ke-ketiak) 45 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-WANITA-XL",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal XL cewek berapa",
+        "size XL wanita versi indo"
+      ],
+      "value": "Ukuran lokal Wanita XL: Panjang 64 cm, Lebar (ketiak-ke-ketiak) 48 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-WANITA-XXL",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal XXL cewek berapa",
+        "size XXL wanita versi indo"
+      ],
+      "value": "Ukuran lokal Wanita XXL: Panjang 67 cm, Lebar (ketiak-ke-ketiak) 51 cm.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-SIZE-LOKAL-WANITA-XXXL-CAUTION",
+      "category": "SIZE_GUIDE_DEWASA_LOKAL",
+      "question_trigger": [
+        "ukuran lokal XXXL cewek berapa"
+      ],
+      "value": "Data ukuran lokal Wanita XXXL pada sumber referensi yang dipakai tim tidak konsisten dengan pola kenaikan ukuran di size lain (lompatan Lebar terlalu besar dibanding L->XL->XXL), kemungkinan salah cetak pada sumber. Perkiraan wajar mengikuti pola kenaikan: Panjang sekitar 70 cm, Lebar sekitar 54 cm -- perlu divalidasi ulang ke size chart resmi brand/pabrik sebelum dipakai untuk produksi atau dijadikan jawaban pasti ke pembeli.",
+      "fact_type": "SIZE_GUIDE"
+    },
+    {
+      "fact_id": "FACT-TS01-MATERIAL-COMPOSITION-001",
+      "category": "MATERIAL",
+      "question_trigger": [
+        "bahannya apa",
+        "isinya cotton berapa persen",
+        "campuran apa aja"
+      ],
+      "value": "Komposisi kain: 100% Cotton Combed 24s (ring-spun), tidak ada campuran serat sintetis. Toleransi komposisi mengikuti praktik pelabelan serat tekstil internasional sekitar 3% (acuan konsep US Textile Fiber Products Identification Act dan Regulasi UE No. 1007/2011 tentang nama & persentase serat tekstil).",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-MATERIAL-002",
+      "category": "MATERIAL",
+      "question_trigger": [
+        "nerawang gak",
+        "tebel gak",
+        "gampang melar"
+      ],
+      "value": "Kain tidak nerawang, gramasi 180 gsm, rajutan single knit rapat sehingga tidak mudah melar.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-MATERIAL-SAFETY-001",
+      "category": "MATERIAL_SAFETY",
+      "question_trigger": [
+        "aman gak buat kulit sensitif anak",
+        "ada zat kimia berbahaya gak"
+      ],
+      "value": "Kain diproduksi mengikuti kerangka acuan pengujian zat berbahaya seperti OEKO-TEX Standard 100; untuk varian ukuran anak (kategori produk kontak kulit erat/Class I) kandungan timbal mengikuti batas acuan CPSIA maksimal 100 ppm dan bebas pewarna azo terlarang.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-MATERIAL-CARE-STD-001",
+      "category": "MATERIAL_SAFETY",
+      "question_trigger": [
+        "simbol cucinya standar apa",
+        "label perawatan ngikutin standar apa"
+      ],
+      "value": "Simbol perawatan pada label kaos mengikuti sistem ISO 3758 (Textiles - Care Labelling Code Using Symbols) yang mencakup instruksi mencuci, memutihkan, mengeringkan, menyetrika, dan dry clean.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-COLOR-001",
+      "category": "COLOR_VARIANT",
+      "question_trigger": [
+        "warna apa aja",
+        "ada warna hitam gak"
+      ],
+      "value": "Tersedia 5 warna: Hitam, Putih, Navy, Abu Misty, dan Maroon; tersedia untuk semua kelompok ukuran anak, remaja, dan dewasa kecuali disebutkan lain.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-COLOR-BLACK",
+      "category": "COLOR_VARIANT",
+      "question_trigger": [
+        "hitam masih ada",
+        "stok hitam"
+      ],
+      "value": "Warna Hitam tersedia untuk semua ukuran anak, remaja, dan dewasa S-XXXL.",
+      "fact_type": "STOCK"
+    },
+    {
+      "fact_id": "FACT-TS01-COLOR-WHITE",
+      "category": "COLOR_VARIANT",
+      "question_trigger": [
+        "putih masih ada",
+        "stok putih"
+      ],
+      "value": "Warna Putih tersedia untuk semua ukuran kecuali dewasa XXL dan XXXL yang stoknya habis.",
+      "fact_type": "STOCK"
+    },
+    {
+      "fact_id": "FACT-TS01-STOCK-KIDS",
+      "category": "STOCK",
+      "question_trigger": [
+        "ukuran anak masih ada",
+        "stok size anak"
+      ],
+      "value": "Seluruh ukuran anak (92-128) berstatus tersedia di semua warna, kecuali disebutkan lain per warna.",
+      "fact_type": "STOCK"
+    },
+    {
+      "fact_id": "FACT-TS01-STOCK-TEEN",
+      "category": "STOCK",
+      "question_trigger": [
+        "ukuran remaja masih ada",
+        "stok size remaja"
+      ],
+      "value": "Seluruh ukuran remaja (134-164) berstatus tersedia, kecuali warna Putih size 164 stoknya terbatas.",
+      "fact_type": "STOCK"
+    },
+    {
+      "fact_id": "FACT-TS01-STOCK-ADULT",
+      "category": "STOCK",
+      "question_trigger": [
+        "ukuran dewasa masih ada",
+        "stok size dewasa"
+      ],
+      "value": "Seluruh ukuran dewasa (XS-XXXL) berstatus tersedia kecuali disebutkan habis pada fact warna terkait.",
+      "fact_type": "STOCK"
+    },
+    {
+      "fact_id": "FACT-TS01-STOCK-RESTOCK",
+      "category": "STOCK",
+      "question_trigger": [
+        "restock kapan",
+        "kapan ada lagi"
+      ],
+      "value": "Untuk informasi restock, arahkan pembeli menunggu pengumuman resmi di halaman produk; tidak ada tanggal pasti yang bisa dijanjikan host.",
+      "fact_type": "STOCK"
+    },
+    {
+      "fact_id": "FACT-TS01-PRICE-001",
+      "category": "PRICE",
+      "question_trigger": [
+        "harganya berapa",
+        "berapaan ini"
+      ],
+      "value": "Harga normal Rp 89.000 per pcs, berlaku sama untuk semua ukuran anak, remaja, dan dewasa.",
+      "fact_type": "PRICE_PROMO"
+    },
+    {
+      "fact_id": "FACT-TS01-PROMO-001",
+      "category": "PROMO",
+      "question_trigger": [
+        "ada promo gak",
+        "diskon gak",
+        "beli 2 gratis"
+      ],
+      "value": "Promo live saat ini: beli 2 pcs harga Rp 159.000 (hemat Rp 19.000), berlaku selama sesi live berlangsung, semua ukuran.",
+      "fact_type": "PRICE_PROMO"
+    },
+    {
+      "fact_id": "FACT-TS01-PROMO-002",
+      "category": "PROMO",
+      "question_trigger": [
+        "ada voucher gak",
+        "pakai kupon"
+      ],
+      "value": "Voucher toko dapat digunakan sesuai ketentuan platform e-commerce; tidak ada voucher tambahan khusus dari host di luar yang tertera di halaman checkout.",
+      "fact_type": "PRICE_PROMO"
+    },
+    {
+      "fact_id": "FACT-TS01-CARE-001",
+      "category": "CARE_INSTRUCTION",
+      "question_trigger": [
+        "cara cuci",
+        "boleh dry clean",
+        "luntur gak"
+      ],
+      "value": "Perawatan: cuci dengan air dingin/suhu ruang, jangan direndam lebih dari 30 menit, hindari pemutih, jemur di tempat teduh agar warna tidak cepat pudar.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-CARE-002",
+      "category": "CARE_INSTRUCTION",
+      "question_trigger": [
+        "nyusut gak kalau dicuci"
+      ],
+      "value": "Penyusutan setelah pencucian normal maksimal sekitar 2-3% jika perawatan sesuai instruksi label.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-SHIP-001",
+      "category": "SHIPPING",
+      "question_trigger": [
+        "kirim dari mana",
+        "ongkir berapa",
+        "sampe berapa hari"
+      ],
+      "value": "Dikirim dari gudang Yogyakarta, estimasi tiba 2-5 hari kerja tergantung kurir dan lokasi tujuan; ongkir dihitung otomatis oleh sistem checkout platform.",
+      "fact_type": "SHIPPING"
+    },
+    {
+      "fact_id": "FACT-TS01-SHIP-002",
+      "category": "SHIPPING",
+      "question_trigger": [
+        "bisa same day gak",
+        "bisa cod gak"
+      ],
+      "value": "Opsi pengiriman same-day dan COD mengikuti ketersediaan kurir di halaman checkout masing-masing pembeli, bukan jaminan tetap dari toko.",
+      "fact_type": "SHIPPING"
+    },
+    {
+      "fact_id": "FACT-TS01-RETURN-001",
+      "category": "RETURN_POLICY",
+      "question_trigger": [
+        "bisa retur gak",
+        "kalau salah ukuran gimana",
+        "boleh tuker size"
+      ],
+      "value": "Retur/tukar ukuran diterima dalam 7 hari setelah barang diterima, dengan syarat produk belum dicuci/dipakai dan label masih terpasang.",
+      "fact_type": "FAQ_PLAYBOOK"
+    },
+    {
+      "fact_id": "FACT-TS01-RETURN-002",
+      "category": "RETURN_POLICY",
+      "question_trigger": [
+        "ongkir retur siapa yang nanggung"
+      ],
+      "value": "Ongkos kirim retur karena kesalahan ukuran pembeli ditanggung pembeli; jika barang cacat produksi, ongkir retur ditanggung toko.",
+      "fact_type": "FAQ_PLAYBOOK"
+    },
+    {
+      "fact_id": "FACT-TS01-WARRANTY-001",
+      "category": "WARRANTY",
+      "question_trigger": [
+        "ada garansi gak",
+        "kalau jahitannya lepas gimana"
+      ],
+      "value": "Garansi cacat produksi (jahitan lepas, sablon rusak dari pabrik) berlaku 3 hari setelah barang diterima dengan bukti unboxing video.",
+      "fact_type": "FAQ_PLAYBOOK"
+    },
+    {
+      "fact_id": "FACT-TS01-MODEL-ADULT-001",
+      "category": "MODEL_INFO",
+      "question_trigger": [
+        "model dewasa pakai size berapa",
+        "modelnya tinggi berapa"
+      ],
+      "value": "Model dewasa pada foto/video memiliki TB 170 cm, BB 60 kg, dan mengenakan size M.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-MODEL-TEEN-001",
+      "category": "MODEL_INFO",
+      "question_trigger": [
+        "model remaja pakai size berapa"
+      ],
+      "value": "Model remaja pada foto memiliki TB 152 cm dan mengenakan size 152 (Remaja M).",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-MODEL-KIDS-001",
+      "category": "MODEL_INFO",
+      "question_trigger": [
+        "model anak pakai size berapa"
+      ],
+      "value": "Model anak pada foto memiliki TB 110 cm dan mengenakan size 110.",
+      "fact_type": "PRODUCT_DETAIL"
+    },
+    {
+      "fact_id": "FACT-TS01-STANDARD-REFERENCE-001",
+      "category": "STANDARD_REFERENCE",
+      "question_trigger": [],
+      "value": "Referensi teknis internal (bukan untuk dikutip langsung ke penonton): size anak/remaja mengacu konsep EN 13402 & ISO 8559-1:2020 (tinggi badan sebagai dimensi utama, lingkar dada penuh/circumference); size dewasa internasional (SIZE_GUIDE_DEWASA) pakai lingkar dada penuh ala letter-size global dan konsep SNI 2161:2010 (Ukuran Pakaian - Kaos Pria Dewasa) untuk konteks lokal -- angka cm belum diverifikasi ke dokumen SNI resmi; size dewasa lokal (SIZE_GUIDE_DEWASA_LOKAL) pakai konvensi Panjang x Lebar ketiak-ke-ketiak yang umum dipakai brand kaos Indonesia, bukan kutipan SNI resmi. Komposisi serat mengacu praktik pelabelan ala US TFPIA & EU Regulation 1007/2011; label perawatan mengacu ISO 3758; keamanan zat kimia mengacu kerangka OEKO-TEX Standard 100 dan batas timbal CPSIA.",
+      "internal_only": true
+    }
+  ]
+}

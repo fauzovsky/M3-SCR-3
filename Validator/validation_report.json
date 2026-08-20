@@ -1,0 +1,447 @@
+{
+  "dataset_path": "response_dataset.jsonl",
+  "total_entries": 60,
+  "passed": 60,
+  "failed": 0,
+  "pass_rate": 1.0,
+  "by_action": {
+    "SHOW_SIZE_GUIDE": {
+      "total": 15,
+      "passed": 15
+    },
+    "CONFIRM_STOCK": {
+      "total": 15,
+      "passed": 15
+    },
+    "EXPLAIN_PRODUCT_DETAIL": {
+      "total": 15,
+      "passed": 15
+    },
+    "EXPLAIN_PRICE_PROMO": {
+      "total": 15,
+      "passed": 15
+    }
+  },
+  "results": [
+    {
+      "index": 0,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Buat BB 55 kg pas banget di size M kak, lingkar dada 96-100 cm, panjang baju 67 cm. Nyaman dipake, gak kesempitan!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 1,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Gaskeun size L nya kak! Lingkar dada 104-108 cm, cocok buat BB 60-72 kg. Buruan checkout sebelum kehabisan!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 2,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Untuk tinggi badan 158-168 cm, size yang sesuai adalah M: lingkar dada 96-100 cm, panjang baju 67 cm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 3,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Kalau anaknya TB sekitar 108 cm, pas nih ambil size 110 ya kak, usia acuan sekitar 5 tahun, lingkar dada 58 cm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 4,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Untuk usia acuan 7 tahun, size yang sesuai adalah 122: tinggi badan 117-122 cm, lingkar dada sekitar 62 cm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 5,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Buat remaja TB sekitar 150 cm, cocok size 152 kak (Remaja M), usia acuan 12-13 tahun, lingkar dada 76 cm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 6,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Nih buat yang badannya udah gede, size 164 (Remaja XL) pas banget, TB 159-164 cm, mendekati dewasa XS. Order sekarang!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 7,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Size XS cocok untuk lingkar dada 84-88 cm, BB 38-45 kg, TB 148-158 cm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 8,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Tenang kak, ada size XXXL! Muat buat BB 95-108 kg, lingkar dada 128-132 cm. Aman kok!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 9,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Size S versi lokal: Panjang 63 cm, Lebar ketiak-ke-ketiak 43 cm -- beda cara ukur dari versi internasional yang pakai lingkar dada penuh.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 10,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Size L lokal buat cewek itu Panjang 61 cm, Lebar 45 cm ya kak, diukur rata dari ketiak ke ketiak.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 11,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Size lokal Pria XXL: Panjang 79 cm, Lebar 60 cm, paling gede tapi masih nyaman -- gas order kak!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 12,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Untuk usia bayi di bawah kisaran size anak yang tersedia, mohon maaf belum ada ukuran yang sesuai di produk ini -- silakan cek size chart lengkap di halaman produk.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 13,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Untuk size lokal Wanita XXXL, data pastinya sedang kami verifikasi ulang -- untuk sementara silakan tanyakan langsung ke admin toko agar tidak salah ukuran.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 14,
+      "selected_action": "SHOW_SIZE_GUIDE",
+      "response_text": "Untuk TB sekitar 145 cm, masuk size 146 (Remaja S/M): TB 141-146 cm, lingkar dada sekitar 70 cm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 15,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Masih ready kak, warna Hitam tersedia untuk semua ukuran S sampai XXXL.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 16,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Warna Putih tersedia untuk semua ukuran kecuali dewasa XXL dan XXXL yang stoknya sudah habis.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 17,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Ada 5 warna kece nih: Hitam, Putih, Navy, Abu Misty, Maroon! Pilih yang paling kamu suka, gas checkout!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 18,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Semua ukuran anak dari 92 sampai 128 masih tersedia lengkap di semua warna ya kak!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 19,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Seluruh ukuran remaja (134-164) tersedia, hanya warna Putih size 164 yang stoknya terbatas.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 20,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Ready kak, semua ukuran dewasa dari XS sampai XXXL tersedia (cek warna spesifiknya ya)!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 21,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Untuk jadwal restock belum ada tanggal pasti, silakan pantau pengumuman resmi di halaman produk ya.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 22,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Navy salah satu dari 5 warna yang tersedia, size M-nya gaskeun order sekarang kak!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 23,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Ini ready stock kak, bukan preorder, untuk ukuran dewasa XS-XXXL.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 24,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Warna Hitam untuk size anak masih lengkap kok kak, semua size 92-128 ready!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 25,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Abu Misty ready buat semua size remaja! Cus checkout sebelum warna favorit ini habis!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 26,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Mohon maaf kak, warna Putih untuk size XXL saat ini stoknya habis. Warna lain di size yang sama masih tersedia.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 27,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Mohon maaf, warna yang ditanyakan tidak tersedia untuk produk ini -- warna yang ada adalah Hitam, Putih, Navy, Abu Misty, dan Maroon.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 28,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Maroon ready kak buat size XL, semua ukuran dewasa masih tersedia!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 29,
+      "selected_action": "CONFIRM_STOCK",
+      "response_text": "Untuk ukuran remaja, kelima warna tersedia, kecuali Putih size 164 yang stoknya terbatas.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 30,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Bahannya 100% Cotton Combed 24s kak, ring-spun, gak ada campuran serat sintetis sama sekali. Adem dipake!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 31,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Kainnya tidak nerawang, gramasi 180 gsm dengan rajutan single knit rapat jadi tidak mudah melar.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 32,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Aman kak, kain diproduksi mengikuti kerangka acuan uji zat berbahaya OEKO-TEX Standard 100, dan untuk size anak kandungan timbal mengikuti batas acuan CPSIA maksimal 100 ppm.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 33,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Simbol perawatan di label mengikuti sistem ISO 3758, mencakup instruksi cuci, pemutihan, pengeringan, dan setrika.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 34,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Nggak ada kak, ini murni 100% Cotton Combed 24s, gak dicampur polyester atau serat lain.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 35,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Nggak gampang melar kak! Rajutannya rapat 180 gsm, awet dipake gonta-ganti gaya. Order sekarang!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 36,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Adem banget kak, 100% cotton combed yang breathable, gramasi pas 180 gsm gak bikin gerah.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 37,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Betul, komposisinya 100% Cotton Combed 24s ring-spun sesuai yang tertera, tanpa campuran serat sintetis.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 38,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Metode perawatan yang direkomendasikan mengikuti simbol pada label sesuai standar ISO 3758 -- cek simbol dry clean di label untuk kepastian.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 39,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Kain ini mengikuti kerangka acuan pengujian zat berbahaya OEKO-TEX Standard 100, namun untuk bayi baru lahir tetap disarankan cek label detail karena size infant belum tersedia di produk ini.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 40,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Beneran ori kak, 100% Cotton Combed 24s gramasi 180 gsm -- harga bersahabat tapi kualitas tetap dijaga. Yuk order!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 41,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Mohon maaf, kami belum punya data spesifik soal kandungan nikel untuk produk ini -- kalau ada riwayat alergi logam tertentu, disarankan konsultasi dulu sebelum membeli.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 42,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Produk ini 100% Cotton Combed 24s, namun kami tidak memiliki data sertifikasi GOTS untuk produk ini -- mohon jangan disamakan dengan klaim organic bersertifikat.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 43,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Bahannya Cotton Combed 24s (ring-spun) kak, bukan carded -- serat sudah disisir jadi lebih halus.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 44,
+      "selected_action": "EXPLAIN_PRODUCT_DETAIL",
+      "response_text": "Cocok kak, ini 100% cotton combed yang lembut, dan diuji sesuai kerangka OEKO-TEX Standard 100 buat memastikan aman di kulit.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 45,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Harga normal Rp 89.000 per pcs kak.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 46,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Ada dong! Beli 2 pcs cuma Rp 159.000, hemat Rp 19.000 selama live ini aja. Jangan sampai kelewatan!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 47,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Voucher toko bisa digunakan sesuai ketentuan platform, tidak ada voucher tambahan khusus dari host di luar itu.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 48,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Harga normalnya Rp 89.000 kak, tapi kalau ambil 2 pcs jadi Rp 159.000 aja, lebih hemat!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 49,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Promo beli 2 Rp 159.000 ini cuma berlaku selama live berlangsung -- buruan checkout sekarang!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 50,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Promo resmi yang berlaku saat ini adalah beli 2 pcs Rp 159.000; untuk kombinasi jumlah lain mengikuti harga normal Rp 89.000 per pcs.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 51,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Gampang kak, tinggal checkout 2 pcs aja langsung otomatis dapet harga Rp 159.000 selama live berlangsung.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 52,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Sama kak, harga Rp 89.000 berlaku untuk semua ukuran anak, remaja, dan dewasa.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 53,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Untuk voucher tambahan khusus dari host belum ada kak, tapi tetap bisa pakai voucher toko yang berlaku di platform.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 54,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Worth it banget kak! Beli 2 pcs cuma Rp 159.000, udah hemat Rp 19.000 dibanding beli satuan. Gas checkout!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 55,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Lumayan banget kak! Harga normal Rp 89.000 per pcs, tapi kalau ambil 2 pcs cuma Rp 159.000 -- checkout sekarang mumpung live!",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 56,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Untuk harga live ini fixed ya kak, Rp 89.000 per pcs atau Rp 159.000 untuk 2 pcs, belum bisa nego lagi.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 57,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Mohon maaf, kami tidak punya informasi soal flash sale di luar promo yang sedang berjalan saat ini -- pantau terus untuk info promo berikutnya.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 58,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Boleh banget kak, beli 1 pcs tetap bisa, harganya Rp 89.000.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    },
+    {
+      "index": 59,
+      "selected_action": "EXPLAIN_PRICE_PROMO",
+      "response_text": "Promo Rp 159.000 untuk 2 pcs itu harga produk saja, ongkir dihitung terpisah otomatis oleh sistem checkout.",
+      "validation_status": "PASSED",
+      "failed_checks": []
+    }
+  ]
+}
